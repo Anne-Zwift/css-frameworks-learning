@@ -102,21 +102,21 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener("DOMContentLoaded", () => {
         // Tooltips
         const tooltipTriggerList = document.querySelectorAll(
-          '[data-bs-toggle="tooltip"]'
+          '[data-bs-toggle="tooltip"]',
         );
         const tooltipList = [...tooltipTriggerList].map(
-          (el) => new bootstrap.Tooltip(el)
+          (el) => new bootstrap.Tooltip(el),
         );
 
         // Popovers
         const popoverTriggerList = document.querySelectorAll(
-          '[data-bs-toggle="popover"]'
+          '[data-bs-toggle="popover"]',
         );
         const popoverList = [...popoverTriggerList].map(
-          (el) => new bootstrap.Popover(el)
+          (el) => new bootstrap.Popover(el),
         );
       });
     </script>
